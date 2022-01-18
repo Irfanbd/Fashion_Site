@@ -347,6 +347,61 @@
         <script src="blogpost.js"></script>
     </div>
 
+
+    <!--Video Gallary -->
+    <div class="v-gallary">
+        <h1>Lets Play What You Like</h1>
+        <div class="row">
+            <div class="col">
+                <div class="feature-img">
+                    <img src="video/pic1.png" width="100%">
+                    <img src="video/play.png" class="play-btn" onclick="playVideo('video/1.mp4')">
+                </div>
+            </div>
+            <div class="col">
+                <div class="small-img-row" id="img2">
+                    <div class="small-img"><img src="video/pic2.png">
+                        <img src="video/play.png" class="play-btn" onclick="playVideo('video/2.mp4')">
+                    </div>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. <br> Culpa voluptates saepe minus,
+                        cumque
+                        iusto
+                        tempore?</p>
+                </div>
+
+                <div class="small-img-row" id="img3">
+                    <div class="small-img"> <img src="video/pic3.png"><img src="video/play.png" class="play-btn"
+                            onclick="playVideo('video/3.mp4')"></div>
+
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. <br> Culpa voluptates saepe minus,
+                        cumque
+                        iusto
+                        tempore?</p>
+                </div>
+
+                <div class="small-img-row" id="img4">
+                    <div class="small-img">
+                        <img src="video/pic4.png"><img src="video/play.png" class="play-btn"
+                            onclick="playVideo('video/4.mp4')">
+                    </div>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. <br> Culpa voluptates saepe minus,
+                        cumque
+                        iusto
+                        tempore?</p>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+
+    <div class="video-player" id="videoPlayer">
+        <video width="100%" controls autoplay id="myVideo">
+            <source src="video/1.mp4" type="video/mp4">
+        </video>
+        <img src="video/close.png" class="close-btn" onclick="stopVideo()">
+    </div>
+    <script src="close.js"></script>
 </body>
 
 </html>
